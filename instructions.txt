@@ -1,0 +1,5 @@
+CACHE 1            ; Enable cache
+ADDI R1, R0, 99
+CACHE 2            ; Flush cache
+CACHE 0            ; Disable cache
+HALT
