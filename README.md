@@ -31,6 +31,7 @@ This simulator mimics the behavior of a simplified MIPS processor, executing ins
 
 ```bash
 python cpu_simulator.py instructions.txt memory.txt
+```
 
 📄 Example: instructions.txt
 ADDI R1, R0, 10      ; Set R1 = 10
