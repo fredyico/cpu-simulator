@@ -32,6 +32,19 @@ This simulator mimics the behavior of a simplified MIPS processor, executing ins
 ```bash
 python cpu_simulator.py instructions.txt memory.txt
 
+📄 Example: instructions.txt
+ADDI R1, R0, 10      ; Set R1 = 10
+ADDI R2, R0, 20      ; Set R2 = 20
+SLT R3, R1, R2       ; R3 = 1
+BNE R1, R2, 2        ; Branch if not equal
+ADDI R4, R0, 99      ; Skipped if branch taken
+HALT
+
+🧠 Example: memory.txt
+0 0
+4 100
+8 200
+
 📦 File Structure
 ├── cpu_simulator.py      # main logic
 ├── instructions.txt      # sample instruction input
@@ -41,3 +54,5 @@ python cpu_simulator.py instructions.txt memory.txt
 👨‍💻 Author
 Built by Frederico Beckedorff
 Part of the Codecademy Computer Science Path
+
+Feel free to fork, contribute, or use it as a learning tool! 🚀
